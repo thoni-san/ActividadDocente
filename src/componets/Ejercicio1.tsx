@@ -1,21 +1,15 @@
-// Componente que calcula el área de un cuadrado
-// usando una función con parámetros
-
 import { useState } from "react";
 
 export const Ejercicio1 = () => {
-  // Hook para manejar el valor del lado
+
   const [lado, setLado] = useState<number>(0);
 
-  // Hook para guardar el resultado del área
   const [area, setArea] = useState<number>(0);
 
-  // Función que calcula el área de un cuadrado
   const calcularAreaCuadrado = (lado: number): number => {
     return lado * lado;
   };
 
-  // Función que se ejecuta al hacer clic en el botón
   const manejarCalculo = () => {
     const resultado = calcularAreaCuadrado(lado);
     setArea(resultado);

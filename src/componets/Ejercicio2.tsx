@@ -1,27 +1,21 @@
-// Componente que suma los elementos de un arreglo
-// usando una función con parámetros
-
 import { useState } from "react";
 
 export const Ejercicio2 = () => {
-  // Hook para manejar el valor del arreglo (en texto)
+  
   const [entrada, setEntrada] = useState<string>("");
 
-  // Hook para guardar el resultado de la suma
   const [suma, setSuma] = useState<number>(0);
 
-  // Función que convierte el string a arreglo de números y suma los elementos
   const sumarElementos = (arreglo: number[]): number => {
     return arreglo.reduce((acumulador, valorActual) => acumulador + valorActual, 0);
   };
 
-  // Función que se ejecuta al hacer clic en el botón
   const manejarSuma = () => {
-    // Convertir string a arreglo de números
+  
     const arregloNumeros = entrada
       .split(",")
       .map((valor) => Number(valor.trim()))
-      .filter((valor) => !isNaN(valor)); // Filtra valores no numéricos
+      .filter((valor) => !isNaN(valor));
 
     const resultado = sumarElementos(arregloNumeros);
     setSuma(resultado);
