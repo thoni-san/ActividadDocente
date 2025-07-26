@@ -1,9 +1,7 @@
 import { useState } from "react";
 
 export const Ejercicio1 = () => {
-
   const [lado, setLado] = useState<number>(0);
-
   const [area, setArea] = useState<number>(0);
 
   const calcularAreaCuadrado = (lado: number): number => {
@@ -17,7 +15,7 @@ export const Ejercicio1 = () => {
 
   return (
     <div>
-      <h3>Ejercicio 1: Área de un cuadrado</h3>
+      <h3>Ejercicio 1: Area del cuadrado es: </h3>
       <input
         type="number"
         placeholder="Ingrese el lado"
@@ -27,11 +25,11 @@ export const Ejercicio1 = () => {
       />
       <br />
       <button className="btn btn-primary" onClick={manejarCalculo}>
-        Calcular área
+        Calcular area
       </button>
       <br />
       <br />
-      <h4>Área: {area}</h4>
+      <h4>El Area es: {area}</h4>
     </div>
   );
 };

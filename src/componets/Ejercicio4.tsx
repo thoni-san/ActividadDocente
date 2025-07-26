@@ -9,9 +9,9 @@ type Alumno = {
 export const Ejercicio4 = () => {
   
   const alumnos: Alumno[] = [
-    { nombre: "Viviana", edad: 19, calificacion: 10 },
-    { nombre: "Wendy", edad: 20, calificacion: 8 },
-    { nombre: "Gerson", edad: 18, calificacion: 9 },
+    { nombre: "Anthoni", edad: 25, calificacion: 10 },
+    { nombre: "Analia", edad: 13, calificacion: 8 },
+    { nombre: "Diana", edad: 28, calificacion: 9 },
   ];
 
   const [promedio, setPromedio] = useState<number>(0);
